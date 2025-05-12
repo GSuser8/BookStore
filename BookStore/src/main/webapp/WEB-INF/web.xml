@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>BookStore</display-name>
+  
+  <servlet>
+  	<servlet-name>Book</servlet-name>
+  	<servlet-class>com.book.Book</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Book</servlet-name>
+  	<url-pattern>/book</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GetBook</servlet-name>
+  	<servlet-class>com.book.GetBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetBook</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>EditBook</servlet-name>
+  	<servlet-class>com.book.EditBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>EditBook</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteBook</servlet-name>
+  	<servlet-class>com.book.DeleteBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteBook</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>

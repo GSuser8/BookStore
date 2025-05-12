@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Store</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<script>
+	function setAction(url){
+		document.getElementById('bookform').action = url;
+	}
+</script>
+</head>
+<body class="container-fluid" style="width:40rem">
+	<h1 class="bg-danger text-white text-center">Book details</h1>
+	<form id="bookform" method="post" action="">
+		<table class="table table-hover">
+			<tr>
+				<td>Book ID:</td>
+				<td><input type="text" name="book_id"></td>
+			</tr>
+			<tr>
+				<td>Book name:</td>
+				<td><input type="text" name="book_name"></td>
+			</tr>
+			<tr>
+				<td>Book edition:</td>
+				<td><input type="text" name="book_edition"></td>
+			</tr>
+			<tr>
+				<td>Book price:</td>
+				<td><input type="text" name="book_price"></td>
+			</tr>
+			<tr>
+				<td><button name="action" value="insert" type="submit" onClick="setAction('book')">Register</button></td>
+				<td><button name="action" value="select" onClick="setAction('list')">View</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
